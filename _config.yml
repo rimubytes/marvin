@@ -1,0 +1,44 @@
+title: "Chrispine Chiedo"
+author: "Chrispine Chiedo"
+description: "Musings on software engineering and other interests."
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
+
+markdown: kramdown
+kramdown:
+  math_engine: katex
+
+# Layout
+sidebar: true                # show a sidebar instead of the usual header
+show_excerpts: true          # show article excerpts on the home page
+show_related: true           # show the previous and next links after every post
+show_description: true       # show the site description in the sidebar
+show_title: true             # always keep the site title visible
+
+# Styling
+dark_header: true            # always keep the header dark
+minimal: false               # use simpler style
+
+# Menu
+navigation:
+  - {file: "index.html", icon: home}
+  - {file: "about.md", icon: address-card}
+  - {file: "projects.md", icon: cube}
+  - {file: "books.md", icon: book}
+
+external:
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/chrispinechiedo/"}
+  - {title: Github, icon: github, url: "https://github.com/chrischiedo"}                    # see http://fontawesome.com/icons
+  - {title: Email, icon: envelope, url: "mailto:chrispinechiedo@gmail.com"}
+
+comments:
+  disqus: false                      # change to 'true' to allow comments
+  disqus_shortname: chiedo           # see https://disqus.com/
+
+
+plugins: 
+  - jekyll-feed
+  
+
