@@ -93,7 +93,7 @@ The `rustyscm` directory will have the following file structure:
 Lexical analysis breaks up a program's source code into a sequence of tokens. In the small subset of Scheme that we are building, we have the following tokens:
 
 - Parentheses: "(" and ")"
-- Numbers: Signed 64-bit floats
+- Numbers: 64-bit floating-point numbers
 - Symbols: Any group of characters other than a number or parenthesis
 
 In Rust, we'll represent the tokens with an enum:
