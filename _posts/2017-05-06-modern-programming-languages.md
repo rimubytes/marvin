@@ -12,11 +12,11 @@ Nineteen ninety-five was a particularly interesting year in the world of compute
 
 > Note: This article was originally published on Medium in 2017, where it has received over 380 claps since then. You can check it out [here](https://medium.com/@chiedo.chrispine/the-rise-of-modern-programming-languages-c923a2b914fc).
 
-The four languages that made their debut in 1995 were **Java**, **JavaScript**, **PHP** and **Ruby**. Although there wasn’t much fanfare accompanying their respective releases, these languages would eventually grow to become ubiquitous programming tools for most software developers. Up until that time, **C** and **C++** were the dominant languages. Despite the fact that these two were very powerful, they were not inherently suited for the world-wide web. In addition they were often considered to be a little complicated and intimidating to novice programmers (especially C++).
+The four languages that made their debut in 1995 were **Java**, **JavaScript**, **PHP** and **Ruby**. Although there wasn’t much fanfare accompanying their respective releases, these languages would eventually grow to become ubiquitous programming tools for most software developers. Up until that time, **C** and **C++** were the dominant languages. Despite the fact that these two were very powerful, they were not inherently suited for the world-wide web. Additionally, they were often considered to be a little complicated and intimidating to novice programmers (especially C++).
 
-Among the four, Java proved to be a runaway success. With its oft quoted slogan of "**Write Once, Run Anywhere**", Java became an instant hit as it was much easier to learn and master (compared to C++). Java came with a Virtual Machine (the **JVM**), that made it possible to write programs that would be run on different platforms without the need for recompilations.
+Among the four, Java proved to be a runaway success. With its oft-quoted slogan of "**Write Once, Run Anywhere**", Java became an instant hit as it was much easier to learn and master (compared to C++). Java came with a Virtual Machine (the **JVM**), that made it possible to write programs that would be run on different platforms without the need for recompilations.
 
-In recent years, **JavaScript** has displaced Java as the [top](https://insights.stackoverflow.com/survey/2017) programming language in the world. The rise of JavaScript is largely attributed to the introduction of [Node.js](https://nodejs.org/en/), a technology that made it possible for JavaScript to be run on the **server-side**.
+In recent years, **JavaScript** has displaced Java as the [top](https://insights.stackoverflow.com/survey/2017) programming language in the world. The rise of JavaScript is largely attributed to the introduction of [Node.js](https://nodejs.org/en/), a technology that made it possible for JavaScript to be run on the _server-side_.
 
 **PHP** became a dominant force in web programming, especially in combination with other popular open-source technologies like **Linux**, **Apache** and **MySQL**. Together, they formed what was commonly referred to as the **LAMP** stack.
 
@@ -27,7 +27,7 @@ In recent years, **JavaScript** has displaced Java as the [top](https://insights
 Beginning in the early 2000s, the programming landscape started to change. More computing machines were shipping with multiple processors, and even individual processors were being designed with multiple cores. This shift in hardware architecture created a need for programming languages that could fully leverage these new processors. Languages needed to execute processes concurrently or in parallel to maximize the potential of multi-core processors. _Concurrency_ was no longer an afterthought; it had to be built into the language itself.
 
 In recent years, there has been a resurgence of interest in [functional programming](https://en.wikipedia.org/wiki/Functional_programming), a paradigm that aims to minimize 
-[side effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science)). In fact, side effects have proven to be a major challenge in the life of modern programmers, often making the already-dreaded task of debugging even more difficult. In concurrent environments, data _safety_ and _immutability_ become critical considerations for developers. Preventing data corruption and _race conditions_ is essential.
+[side effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science)). In fact, side effects have proven to be a major challenge in the life of modern programmers, often making the already-dreaded task of debugging even more difficult. In concurrent programming environments, data _safety_ and _immutability_ become essential considerations for developers. Preventing data _corruption_ and _race conditions_ is critical is such environments.
 
 Last but not least, modern machines have become increasingly powerful. While performance speed was a primary concern in the past, recent focus has shifted toward _programmer productivity_. As a result, programming languages benefit from having clean, elegant syntax that is easy to write and read. A new developer should be able to pick up the language quickly and start working with it in the shortest time possible. Ideally, one should be able to experiment with the language immediately using an interactive loop, commonly known as a **REPL** (Read-Eval-Print Loop), without dealing with tedious setup or compilation processes.
 
@@ -101,7 +101,7 @@ If a variable has no initial value then its type must be declared explicitly, li
 var x: Int
 ```
 
-An important point to note is that Scala **requires** you to initialize a variable, whether you intent for it to be immutable or not.
+An important point to note is that Scala _requires_ you to initialize a variable, whether you intent for it to be immutable or not.
 So for the case using *var* above, both the declaration and initialization of the variable can be done simultaneously, like so:
 
 ```scala
@@ -110,7 +110,7 @@ var x: Int = 20
 
 ***Concurrency in Scala***:
 
-Scala uses ***Actors*** (Based on the [Actor Model](https://en.wikipedia.org/wiki/Actor_model) proposed by **Carl Hewitt** in the early 1970s) to implement concurrency. The implementation method is heavily influenced by [Erlang](https://www.erlang.org/).
+Scala uses ***Actors*** (based on the [Actor Model](https://en.wikipedia.org/wiki/Actor_model) proposed by **Carl Hewitt** in the early 1970s) to implement concurrency. The implementation method is heavily influenced by [Erlang](https://www.erlang.org/).
 A simple example is shown below:
 
 ```scala
@@ -157,13 +157,13 @@ An alternative to ***receive*** is ***react***, which unlike receive, does not r
 
 One of the early adopters of Scala was **Twitter** way back in 2009.
 
-The main drawback for Scala seems to be its steep learning curve, but once you master it, you'll wonder why you lived without it.
+The main drawback for Scala seems to be its steep learning curve.
 
 One of the authoritative books on Scala is [Programming in Scala](https://www.amazon.com/Programming-Scala-Comprehensive-Step-Step/dp/0981531644) by Martin Odersky, Lex Spoon and Bill Venners. It is worth checking out.
 
 ### 2. Golang (Go)
 
-This is a language that was created by Google for its own internal use (Google deals with highly distributed systems). [Go](https://golang.org/) is particularly interesting because one of its designers (**Ken Thompson**) is a folklore hero in computer science. He is the creator of the venerable **UNIX** operating system, which he designed in the early 1970s while working at Bell Labs. Go was announced in 2009 and has since been released as an **open-source** project. The designers of the language have indicated that one of their motivations was their shared frustrations with the complexity inherent in C++.
+This is a language that was originally created by Google for its own internal use. [Go](https://golang.org/) is particularly interesting because one of its designers (**Ken Thompson**) is a folklore hero in computer science. He is the creator of the venerable **UNIX** operating system, which he designed in the early 1970s while working at Bell Labs. Go was announced in 2009 and has since been released as an open-source project. The designers of the language have indicated that one of their motivations was their shared frustrations with the complexity inherent in C++.
 
 Go is often touted as being '**C for the 21st Century**'. It is a compiled language (with much faster compile times compared to C/C++), and has automatic memory management through the use of a **garbage collector**.
 
@@ -179,7 +179,7 @@ func factorial(x int) int {
 }
 ```
 
-A function in Go is declared using the `func` keyword. This is followed by the name of the function and a list of parameters in a pair of parentheses. In this case, the factorial function only takes one argument, an integer **x**. The function also '***returns***' an integer, as indicated by the `int` keyword after the closing parenthesis of the argument list. The body of the function is enclosed within a pair of curly braces. Similar to Scala, the function return type comes **after** the name of the function (**trailing return type**), not before, as is the case with C or Java.
+A function in Go is declared using the `func` keyword. This is followed by the name of the function and a list of parameters in a pair of parentheses. In this case, the factorial function only takes one argument, an integer **x**. The function also '***returns***' an integer, as indicated by the `int` keyword after the closing parenthesis of the argument list. The body of the function is enclosed within a pair of curly braces. Similar to Scala, the function return type comes _after_ the name of the function (_trailing_ return type), not before, as is the case with C or Java.
 
 Variables in Go are declared using the keyword `var` like shown below:
 
@@ -260,7 +260,7 @@ The left arrow operator (**<-**) is used to send (and receive) messages through 
 c1 <- "hello from channel 1"
 ```
 
-In this case, the string message '*hello from channel 1*' is '**send**' to the channel **c1**.
+In this case, the string message '*hello from channel 1*' is '_send_' to the channel **c1**.
 
 The receive construct is shown below:
 
@@ -279,12 +279,12 @@ The most famous project implemented using Go is perhaps [Docker](https://www.doc
 
 The following are two links that I have found to be great for a beginner in Go:
 
->1. An interactive tour of Go can be found [here](https://tour.golang.org/).
+1. An interactive tour of Go can be found [here](https://tour.golang.org/).
 2. If you want to learn Go by example, [here](https://gobyexample) is the place to go.
 
 ### 3. Rust
 
-[Rust](https://www.rust-lang.org) is a systems programming language that was created by Mozilla Research as a safer and more efficient alternative to C/C++. It was officially released as an open-source project back in 2010. The lead designer of the language was **Graydon Hoare**, who has since moved to **Apple** and is now working as part of the **Swift** (discussed later) team.
+[Rust](https://www.rust-lang.org) is a systems programming language that was created by Mozilla Research as a safer and more efficient alternative to C/C++. It was officially released as an open-source project back in 2010. The lead designer of the language was **Graydon Hoare**, who has since moved to **Apple** and is now working as part of the **Swift** (discussed later) language team.
 
 The stated goals of the Rust programming language are:
 
@@ -306,17 +306,17 @@ fn factorial(x: i32) -> i32 {
 
 By now, I am sure that you can tell what is going on in the code snippet above.
 
-A function in Rust is declared using the keyword `fn`. This is followed by the name of the function and a list of arguments within a pair of parentheses. For the case above, we only have one argument, **x**, which is a 32-bit signed `integer` number. Note that the type of the function argument must be declared; and if there more than one arguments, they should be separated by commas.
+A function in Rust is declared using the keyword `fn`. This is followed by the name of the function and a list of arguments within a pair of parentheses. For the case above, we only have one argument, **x**, which is a 32-bit signed `integer` number. Note that the function argument must be annotated with a type, and if there are more than one argument, each argument should be separated by a comma.
 
 The function returns another 32-bit signed integer number, as indicated by the right arrow operator (**->**) and `i32` after it.
 
-Variables in Rust are **immutable** by default (safety is taken very seriously in Rust!), and they are declared using the keyword `let`, as shown below:
+Variables in Rust are _immutable_ by default, and they are declared using the keyword `let`, as shown below:
 
 ```rust
 let x = 7;
 ```
 
-The code above declares a local variable and assigns it a value of *7*. The code snippet is officially called a ***variable binding*** in Rust. In this case, **7** is '*bound*' to the variable ***x***.
+The code above declares a variable and assigns it a value of *7*. The code snippet is officially called a ***variable binding*** in Rust. In this case, **7** is '*bound*' to the variable ***x***.
 The Rust compiler will infer the type of ***x*** as `i32`.
 
 The idea of variable bindings allows for pattern matching as shown below:
@@ -339,7 +339,7 @@ If a variable will need to change after its initialization, then we should add t
 let mut x = 7;
 ```
 
-N/B: Unlike most of the other languages surveyed in this article, Rust requires a semicolon as a statement terminator (although there are a few exceptions to this rule).
+Note: Unlike most of the other languages surveyed in this article, Rust requires a semicolon as a _statement terminator_ (although there are a few exceptions to this rule).
 
 ***Concurrency in Rust***:
 
