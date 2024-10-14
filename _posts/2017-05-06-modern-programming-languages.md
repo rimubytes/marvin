@@ -6,7 +6,7 @@ tags: Rust Golang Scala Swift Kotlin
 excerpt_separator: <!--more-->
 ---
 
-Nineteen ninety-nine was a particularly interesting year in the world of computer programming. During this year, four new programming languages were released that would go on to influence the global programming community in ways not anticipated at the time of their official announcements. Interestingly, this period also coincided with the early days of the web, as the Internet was on the verge of exploding into mainstream digital culture.
+Nineteen ninety-five was a particularly interesting year in the world of computer programming. During this year, four new programming languages were released that would go on to influence the global programming community in ways not anticipated at the time of their official announcements. Interestingly, this period also coincided with the early days of the web, as the Internet was on the verge of exploding into mainstream digital culture.
 
 <!--more-->
 
@@ -43,13 +43,13 @@ As you will soon realize, most of these new languages have a lot in common. In s
 
 Some of the common features shared by these modern languages are:
 
-* Variables are typically _**immutable**_ by default.
-* Most languages favor _**type inference**_ over explicit type annotations.
-* There is a strong emphasis on _**type safety**_.
+* Variables are typically _immutable_ by default.
+* Most languages favor _type inference_ over explicit type annotations.
+* There is a strong emphasis on _type safety_.
 * Many feature _trailing_ function return types.
 * Some provide simpler ways to spawn multiple threads (or processes) for _concurrent_ execution.
 * Some offer easier mechanisms for communicating between processes through _channels_ or similar primitives.
-* Many emphasize _functional_ programming styles, such as pattern matching and lazy evaluation.
+* Many emphasize the _functional programming_ style, such as the use of pattern matching and lazy evaluation.
 * Semicolons are generally _not required_ as statement terminators.
 * Some languages include a _REPL_ for interactive programming.
 * Many are typically _statically-typed_.
