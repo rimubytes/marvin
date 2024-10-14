@@ -47,13 +47,13 @@ Some of the common features shared by these modern languages are:
 * Most languages favor _**type inference**_ over explicit type annotations.
 * There is a strong emphasis on _**type safety**_.
 * Many feature _trailing_ function return types.
-* Some provide simpler ways to spawn multiple processes or threads for _concurrent_ execution.
-* Some offer easier mechanisms for _inter-process communication_ through channels or similar primitives.
+* Some provide simpler ways to spawn multiple threads (or processes) for _concurrent_ execution.
+* Some offer easier mechanisms for communicating between processes through _channels_ or similar primitives.
 * Many emphasize _functional_ programming styles, such as pattern matching and lazy evaluation.
 * Semicolons are generally _not required_ as statement terminators.
-* Most languages include a _REPL_ for interactive programming.
+* Some languages include a _REPL_ for interactive programming.
 * Many are typically _statically-typed_.
-* Most often have clean, elegant syntax with _minimal clutter_ and verbosity.
+* Most often have clean/concise syntax with _minimal clutter_ and less verbosity.
 
 ### Common Modern Programming Languages
 
@@ -70,9 +70,10 @@ N/B: I will be using a **simple function declaration** to compare the five langu
 ### 1. Scala
 
 This is a language that made its debut in the first decade of this century and is arguably one of the 'oldest' modern programming languages. It is a product of the academia, having been designed by Martin Odersky while working at the EPFL in Switzerland. First released in 2004, [Scala](https://www.scala-lang.org/) combines object-oriented and functional programming paradigms.
+
 Applications written in Scala run on top of the JVM, hence they are easily portable to multiple platforms.
 
-A simple function declaration in Scala is as follows:
+A simple function declaration in Scala is written as follows:
 
 ```scala
 def factorial(x: Int): Int = {
