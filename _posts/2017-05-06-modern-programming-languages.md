@@ -28,7 +28,7 @@ Beginning in the 2000s, the programming landscape started changing. More and mor
 
 In recent years, there has also been a resurgent interest in [functional programming](https://en.wikipedia.org/wiki/Functional_programming), a paradigm that tries to eliminate [side effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science)) as much as possible. As a matter of fact, the occurrence of side effects has proven to be a bane in the modern programmer's life. It usually makes the process of debugging code (the one activity that every programmer dreads) far much harder. In a concurrent environment, **safety** and **immutability** of data become very important considerations for developers. **Data corruption** and/or **races** need to be prevented as much as possible.
 
-Last but not least, modern machines have continued to grow very powerful. While in the past, much emphasis was put on the performance speeds of programs, this focus has recently faded. Instead, much attention has shifted towards programmer productivity. As a result, it pays for a programming language to have neat and elegant syntax, which is easy to write and read. A new developer should be able to pick it up quickly and be up and running with the language in the shortest time possible. One ought to be able to play with the language right from the beginning through an interactive loop, commonly known as the **REPL** (Read-Eval-Print Loop), without having to go through tedious setup and compilation processes.
+Last but not least, modern machines have continued to grow very powerful. While in the past, much emphasis was placed on the performance speeds of programs, more recently, much attention has shifted towards _programmer productivity_. As a result, it pays for a programming language to have neat and elegant syntax, which is easy to write and read. A new developer should be able to pick it up quickly and be up and running with the language in the shortest time possible. One ought to be able to play with the language right from the beginning through an interactive loop, commonly known as the **REPL** (Read-Eval-Print Loop), without having to go through tedious setup and compilation processes.
 
 ### Teaching an Old Dog New Tricks
 
@@ -36,13 +36,14 @@ In order to stay relevant in the emerging programming landscape, a lot of effort
 
 ### Necessity is the Mother of Invention
 
-Due to the factors discussed above (and many others not mentioned in this article), several programming languages have been invented in order to try and tackle some (if not all) of these problems. I refer to these languages as '**modern**' because all of the them have been released within this century.
+Due to the factors discussed above (and many others not mentioned in this article), several programming languages have been invented in order to try and tackle some (if not all) of these problems. I refer to these languages as '**modern**' because all of the them have been released within this century (i.e. from 2001 onwards).
+
 As you will soon realize, most of these new languages have a lot in common. The syntax of some of them look very similar.
 
-Some of the common features shared by most of the languages are:
+Some of the common features shared by these modern languages are:
 
 * variables are preferred to be ***immutable*** by default
-* type ***inference***
+* most of them prefer type ***inference*** rather than explicit type annotations
 * most of them emphasize ***type safety***
 * most of them have ***trailing*** function return types
 * some of them offer easier ways of spawning multiple processes (or threads) that can be executed ***concurrently***
