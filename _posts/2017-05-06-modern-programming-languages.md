@@ -14,7 +14,7 @@ Nineteen ninety-five was a particularly interesting year in the world of compute
 
 The four languages that made their debut in 1995 were **Java**, **JavaScript**, **PHP** and **Ruby**. Although there wasn’t much fanfare accompanying their respective releases, these languages would eventually grow to become ubiquitous programming tools for most software developers. Up until that time, **C** and **C++** were the dominant languages. Despite the fact that these two were very powerful, they were not inherently suited for the world-wide web. In addition they were often considered to be a little complicated and intimidating to novice programmers (especially C++).
 
-Among the four, **Java** proved to be a runaway success. With its oft quoted slogan of "**Write Once, Run Anywhere**", Java became an instant hit as it was much easier to learn and master (compared to C++). Java came with a Virtual Machine (**JVM**), that made it possible to write programs that would be run on different platforms without the need for recompilations.
+Among the four, Java proved to be a runaway success. With its oft quoted slogan of "**Write Once, Run Anywhere**", Java became an instant hit as it was much easier to learn and master (compared to C++). Java came with a Virtual Machine (the **JVM**), that made it possible to write programs that would be run on different platforms without the need for recompilations.
 
 In recent years, **JavaScript** has displaced Java as the [top](https://insights.stackoverflow.com/survey/2017) programming language in the world. The rise of JavaScript is largely attributed to the introduction of [Node.js](https://nodejs.org/en/), a technology that made it possible for JavaScript to be run on the **server-side**.
 
@@ -39,9 +39,9 @@ To stay relevant in the evolving programming landscape, significant efforts have
 
 Due to the factors discussed above (and many others not covered in this article), several programming languages have been developed to address some, if not all, of these challenges. I refer to these languages as '_modern_' because all of the them have been released within this century (i.e. from 2001 onwards).
 
-As you will soon realize, most of these new languages have a lot in common. In some cases, even their syntax looks very similar.
+As you will soon realize, some (if not most) of these new languages have a lot in common.
 
-Some of the common features shared by these modern languages are:
+Some of the features shared by these modern languages are:
 
 * Variables are typically _immutable_ by default.
 * Most languages favor _type inference_ over explicit type annotations.
@@ -64,12 +64,11 @@ The following are arguably the most 'popular' modern programming languages:
 1. Kotlin
 1. Swift
 
-What follows is an overview of some of the main features of each language.
-N/B: I will be using a **simple function declaration** to compare the five languages.
+What follows is a brief look at some of the features of each of these languages. I will also highlight how each language implements _concurrency_, which is an important aspect that cuts across all the languages.
 
 ### 1. Scala
 
-This is a language that made its debut in the first decade of this century and is arguably one of the 'oldest' modern programming languages. It is a product of the academia, having been designed by Martin Odersky while working at the EPFL in Switzerland. First released in 2004, [Scala](https://www.scala-lang.org/) combines object-oriented and functional programming paradigms.
+This is a language that made its debut in the first decade of this century and is arguably the 'oldest' modern programming language. It is a product of the academia, having been designed by Martin Odersky while working at the EPFL in Switzerland. First released in 2004, [Scala](https://www.scala-lang.org/) combines object-oriented and functional programming paradigms.
 
 Applications written in Scala run on top of the JVM, hence they are easily portable to multiple platforms.
 
@@ -535,4 +534,4 @@ This relatively long post has attempted to present a broad overview of some of t
 
 It should be noted clearly that I am not a language design expert. What I have discussed here should be taken as my own assessment of the respective languages and how they try to solve the problems that were articulated at the beginning of this essay.
 
-My deepest hope is that after reading this article, you will be motivated to explore the languages more and find out how they might help with your own projects.
+My hope is that after reading this article, you will be motivated to explore the languages more and find out how they might help with your own projects.
