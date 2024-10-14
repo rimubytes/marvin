@@ -6,57 +6,58 @@ tags: Rust Golang Scala Swift Kotlin
 excerpt_separator: <!--more-->
 ---
 
-Nineteen ninety nine was a particularly interesting year in the computer programming world. It is in this year that four new programming languages were released that would go on to influence the global programming community in ways that were not anticipated at the time of their official announcements. Incidentally, this was also the time that the web was just beginning to make waves and the Internet was on the verge of exploding into the mainstream digital culture.
+Nineteen ninety-nine was a particularly interesting year in the world of computer programming. During this year, four new programming languages were released that would go on to influence the global programming community in ways not anticipated at the time of their official announcements. Interestingly, this period also coincided with the early days of the web, as the Internet was on the verge of exploding into mainstream digital culture.
 
 <!--more-->
 
 > Note: This article was originally published on Medium in 2017, where it has received over 380 claps since then. You can check it out [here](https://medium.com/@chiedo.chrispine/the-rise-of-modern-programming-languages-c923a2b914fc).
 
-The four languages that made their debut in 1995 were **Java**, **JavaScript**, **PHP** and **Ruby**. Although there wasn't any much fanfare accompanying their respective releases, these languages would eventually grow to become ubiquitous programming tools to most software developers. Up until that time, **C** and **C++** were the dominant languages. Despite the fact that these two were very powerful, they were not inherently suited for the world-wide web. In addition they were often considered to be a little complicated and intimidating to novice programmers (especially C++).
+The four languages that made their debut in 1995 were **Java**, **JavaScript**, **PHP** and **Ruby**. Although there wasn’t much fanfare accompanying their respective releases, these languages would eventually grow to become ubiquitous programming tools for most software developers. Up until that time, **C** and **C++** were the dominant languages. Despite the fact that these two were very powerful, they were not inherently suited for the world-wide web. In addition they were often considered to be a little complicated and intimidating to novice programmers (especially C++).
 
 Among the four, **Java** proved to be a runaway success. With its oft quoted slogan of "**Write Once, Run Anywhere**", Java became an instant hit as it was much easier to learn and master (compared to C++). Java came with a Virtual Machine (**JVM**), that made it possible to write programs that would be run on different platforms without the need for recompilations.
 
-In recent years, **JavaScript** has displaced Java as the [top](https://insights.stackoverflow.com/survey/2017) programming language in the world. The steady rise of JavaScript has largely been attributed to the introduction of [Node.js](https://nodejs.org/en/), a technology that has made it possible for JavaScript to be run on the **server-side**.
+In recent years, **JavaScript** has displaced Java as the [top](https://insights.stackoverflow.com/survey/2017) programming language in the world. The rise of JavaScript is largely attributed to the introduction of [Node.js](https://nodejs.org/en/), a technology that made it possible for JavaScript to be run on the **server-side**.
 
-**PHP** became a dominant force in the Web Programming sphere, especially in combination with other popular open-source technologies like **Linux**, **Apache** and **MySQL**. Together, they formed what has commonly been referred to as the **LAMP** stack.
+**PHP** became a dominant force in web programming, especially in combination with other popular open-source technologies like **Linux**, **Apache** and **MySQL**. Together, they formed what was commonly referred to as the **LAMP** stack.
 
-**Ruby** became famous among web developers after the release of the insanely popular [Ruby on Rails](http://rubyonrails.org/) web framework in 2005 by the Danish programmer **David Heinemeier Hansson** (DHH).
+**Ruby** became famous among web developers after the release of the [Ruby on Rails](http://rubyonrails.org/) web framework in 2005 by the Danish programmer **David Heinemeier Hansson** (DHH).
 
 ### The Need for New Programming Languages
 
-Beginning in the 2000s, the programming landscape started changing. More and more computing machines started shipping with multiple processors and even individual processors had more than one core. This shift in the nature of computing hardware necessitated the need for programming languages that would take full advantage of the new processor architecture. Languages needed to be able to execute processes concurrently and/or in parallel in order to maximize the potential of the new multi-core processors. **Concurrency** was no longer an after-thought, it needed to be built into the language itself.
+Beginning in the early 2000s, the programming landscape started to change. More computing machines were shipping with multiple processors, and even individual processors were being designed with multiple cores. This shift in hardware architecture created a need for programming languages that could fully leverage these new processors. Languages needed to execute processes concurrently or in parallel to maximize the potential of multi-core processors. _Concurrency_ was no longer an afterthought; it had to be built into the language itself.
 
-In recent years, there has also been a resurgent interest in [functional programming](https://en.wikipedia.org/wiki/Functional_programming), a paradigm that tries to eliminate [side effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science)) as much as possible. As a matter of fact, the occurrence of side effects has proven to be a bane in the modern programmer's life. It usually makes the process of debugging code (the one activity that every programmer dreads) far much harder. In a concurrent environment, **safety** and **immutability** of data become very important considerations for developers. **Data corruption** and/or **races** need to be prevented as much as possible.
+In recent years, there has been a resurgence of interest in [functional programming](https://en.wikipedia.org/wiki/Functional_programming), a paradigm that aims to minimize 
+[side effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science)). In fact, side effects have proven to be a major challenge in the life of modern programmers, often making the already-dreaded task of debugging even more difficult. In concurrent environments, data _safety_ and _immutability_ become critical considerations for developers. Preventing data corruption and _race conditions_ is essential.
 
-Last but not least, modern machines have continued to grow very powerful. While in the past, much emphasis was placed on the performance speeds of programs, more recently, much attention has shifted towards _programmer productivity_. As a result, it pays for a programming language to have neat and elegant syntax, which is easy to write and read. A new developer should be able to pick it up quickly and be up and running with the language in the shortest time possible. One ought to be able to play with the language right from the beginning through an interactive loop, commonly known as the **REPL** (Read-Eval-Print Loop), without having to go through tedious setup and compilation processes.
+Last but not least, modern machines have become increasingly powerful. While performance speed was a primary concern in the past, recent focus has shifted toward _programmer productivity_. As a result, programming languages benefit from having clean, elegant syntax that is easy to write and read. A new developer should be able to pick up the language quickly and start working with it in the shortest time possible. Ideally, one should be able to experiment with the language immediately using an interactive loop, commonly known as a **REPL** (Read-Eval-Print Loop), without dealing with tedious setup or compilation processes.
 
 ### Teaching an Old Dog New Tricks
 
-In order to stay relevant in the emerging programming landscape, a lot of efforts have been made to update older languages like Java and C++ to fit into the current state of affairs. In Java for example, ***Lambda Expressions*** and the ***Stream API*** were added in the **Java 8** release, and **Java 9** will now ship with a REPL (JShell). The main drawback for these 'old' languages is that they were never built from the ground up to solve the emerging problems in the modern programming world. Trying to retrofit new features into the languages hasn't proved to be an elegant solution either. This leaves us with no other choice except to embrace new programming languages that have been designed from the ground up to address some of the thorny issues in modern software engineering.
+To stay relevant in the evolving programming landscape, significant efforts have been made to update older languages like Java and C++ to meet modern demands. For example, Java introduced _Lambda Expressions_ and the _Stream API_ in its Java 8 release, and Java 9 will include a REPL (JShell). However, the main drawback of these ‘old’ languages is that they weren’t originally designed to address the challenges of modern programming. Retrofitting new features has not always been an elegant solution. As a result, we are increasingly turning to new programming languages, built from the ground up to tackle the complex issues in modern software engineering.
 
 ### Necessity is the Mother of Invention
 
-Due to the factors discussed above (and many others not mentioned in this article), several programming languages have been invented in order to try and tackle some (if not all) of these problems. I refer to these languages as '**modern**' because all of the them have been released within this century (i.e. from 2001 onwards).
+Due to the factors discussed above (and many others not covered in this article), several programming languages have been developed to address some, if not all, of these challenges. I refer to these languages as '_modern_' because all of the them have been released within this century (i.e. from 2001 onwards).
 
-As you will soon realize, most of these new languages have a lot in common. The syntax of some of them look very similar.
+As you will soon realize, most of these new languages have a lot in common. In some cases, even their syntax looks very similar.
 
 Some of the common features shared by these modern languages are:
 
-* variables are preferred to be ***immutable*** by default
-* most of them prefer type ***inference*** rather than explicit type annotations
-* most of them emphasize ***type safety***
-* most of them have ***trailing*** function return types
-* some of them offer easier ways of spawning multiple processes (or threads) that can be executed ***concurrently***
-* some of them offer easier ways for ***inter-process communication*** through channels (or similar primitives)
-* most of them emphasize the ***functional*** style of programming (e.g. pattern matching and lazy evaluation)
-* most of them don't ***require*** semi-colons as statement terminators
-* most of them offer a ***REPL***
-* most of them are ***statically-typed***
-* most of them have ***clean and elegant syntax***, without much clutter and verbosity
+* Variables are typically _**immutable**_ by default.
+* Most languages favor _**type inference**_ over explicit type annotations.
+* There is a strong emphasis on _**type safety**_.
+* Many feature _trailing_ function return types.
+* Some provide simpler ways to spawn multiple processes or threads for _concurrent_ execution.
+* Some offer easier mechanisms for _inter-process communication_ through channels or similar primitives.
+* Many emphasize _functional_ programming styles, such as pattern matching and lazy evaluation.
+* Semicolons are generally _not required_ as statement terminators.
+* Most languages include a _REPL_ for interactive programming.
+* Many are typically _statically-typed_.
+* Most often have clean, elegant syntax with _minimal clutter_ and verbosity.
 
 ### Common Modern Programming Languages
 
-The following are arguably the most 'visible' modern programming languages:
+The following are arguably the most 'popular' modern programming languages:
 1. Scala
 1. Golang (Go)
 1. Rust
