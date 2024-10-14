@@ -55,9 +55,10 @@ Some of the features shared by these modern languages are:
 * Many are typically _statically-typed_.
 * Most often have clean/concise syntax with _minimal clutter_ and less verbosity.
 
-### Common Modern Programming Languages
+### Popular Modern Programming Languages
 
-The following are arguably the most 'popular' modern programming languages:
+The following may arguably be considered as the most 'popular' modern programming languages:
+
 1. Scala
 1. Golang (Go)
 1. Rust
