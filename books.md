@@ -71,8 +71,6 @@ Here is a list of some of my favourite technical and non-technical books:
 - Team of Rivals by Doris Goodwin
 - Sapiens: A Brief History of Humankind by Yuval Noah Harari
 - The Power of Geography by Tim Marshall
-- Essentials of International Relations by Karen Mingst & Heather McKibben
-- Essential Readings in World Politics by Karen Mingst, et al.
 - Great Physicists by William Cropper
 - The Last Lecture by Randy Pausch
 - The Prosperity Paradox by Clayton Christensen
