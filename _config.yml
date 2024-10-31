@@ -1,6 +1,6 @@
-title: "Chrispine Chiedo"
-author: "Chrispine Chiedo"
-description: "Musings on software engineering and other interests."
+title: "Marvin Murithi"
+author: "Marvin Murithi"
+description: "Insights on building systems and discovering inspiration."
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -29,9 +29,9 @@ navigation:
   - {file: "books.md", icon: book}
 
 external:
-  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/chrispinechiedo/"}
-  - {title: Github, icon: github, url: "https://github.com/chrischiedo"}                    # see http://fontawesome.com/icons
-  - {title: Email, icon: envelope, url: "mailto:chrispinechiedo@gmail.com"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/marvin-m-249088179/"}
+  - {title: Github, icon: github, url: "https://github.com/rimubytes"}                    # see http://fontawesome.com/icons
+  - {title: Email, icon: envelope, url: "mailto:murithimarvin09@gmail.com"}
 
 comments:
   disqus: false                      # change to 'true' to allow comments
