@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Rust Development
+title: "From Code to Knowledge: Using GitHub as Your Second Brain"
 comments: true
 tags: performance concurrency Rust borrow-checker cargo rustup
 excerpt_separator: <!--more-->
