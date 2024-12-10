@@ -15,7 +15,7 @@ Modern applications rely heavily on network communication, making the efficient 
 
 ## Why understanding Packet Flow Matters
 
--The Linux network stack is complex, but understanding its mechanics offers several benefits:
+- The Linux network stack is complex, but understanding its mechanics offers several benefits:
 
 1. **Performance Optimization:** Tuning the stack can significantly improve throughput and reduce latency.
 2. **Security Analysis:** Knowing the packet's path helps identify vulnerabilities and enforce security policies.
