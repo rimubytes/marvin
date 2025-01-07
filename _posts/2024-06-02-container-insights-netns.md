@@ -33,7 +33,7 @@ By default, all processes share the default network namespace of the host, but t
 
 Let’s explore how to create, join, and manage network namespaces programmatically in Go.
 
-1. **Setting Up a New Network Namespace**
+**Setting Up a New Network Namespace**
 
 The setupNewNetworkNamespace function creates a new netns and saves it as a file in /tmp/net-ns. This is achieved through:
 
@@ -61,7 +61,7 @@ func setupNewNetworkNamespace(processID int) {
 }
 ```
 
-2. **Joining a Network Namespace**
+**Joining a Network Namespace**
 
 The joinContainerNetworkNamespace function allows a process to switch to an existing namespace. This is particularly useful when multiple containers or processes need to share the same network stack.
 
@@ -86,7 +86,7 @@ func joinContainerNetworkNamespace(processID int) error {
 }
 ```
 
-3. **Checking Current Namespace**
+**Checking Current Namespace**
 
 The getNamespaceInfo function uses the readlink command to retrieve the namespace a process belongs to. This is helpful for verifying namespace transitions.
 
@@ -132,13 +132,15 @@ func main() {
 
 #### Real-World Applications
 
-1. **Container Networking**
+**Container Networking**
 
 netns enables containers to have their isolated networking, ensuring secure and conflict-free communication.
-2. **Custom Environments for Testing**
+
+**Custom Environments for Testing**
 
 Developers can create isolated network stacks to test applications in controlled environments.
-3. **Shared Networks Between Containers**
+
+**Shared Networks Between Containers**
 
 Multiple containers or processes can join the same netns, enabling advanced networking setups like service meshes or overlay networks.
 
