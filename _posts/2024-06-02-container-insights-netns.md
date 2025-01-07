@@ -135,13 +135,11 @@ func main() {
 1. **Container Networking**
 
 netns enables containers to have their isolated networking, ensuring secure and conflict-free communication.
-
 2. **Custom Environments for Testing**
 
 Developers can create isolated network stacks to test applications in controlled environments.
-
 3. **Shared Networks Between Containers**
 
 Multiple containers or processes can join the same netns, enabling advanced networking setups like service meshes or overlay networks.
 
-
+Network namespaces (netns) are a fundamental building block of container networking. They empower developers and administrators to isolate, customize, and secure network environments for processes. By understanding and experimenting with netns, you gain a deeper insight into the mechanisms that make containers like Docker and Kubernetes so powerful.
