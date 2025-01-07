@@ -86,3 +86,62 @@ func joinContainerNetworkNamespace(processID int) error {
 }
 ```
 
+3. **Checking Current Namespace**
+
+The getNamespaceInfo function uses the readlink command to retrieve the namespace a process belongs to. This is helpful for verifying namespace transitions.
+
+Key snippet:
+
+```go
+func getNamespaceInfo(processID int) {
+    path := fmt.Sprintf("/proc/%d/ns/net", processID)
+    out, err := exec.Command("readlink", path).Output()
+    if err != nil {
+        log.Fatalf("Error reading namespace file: %v\n", err)
+    }
+    log.Printf("Process is now in the Namespace: %s", string(out))
+}
+```
+
+### Workflow
+
+The program illustrates the following workflow:
+
+1. Retrieve the current namespace and log its details.
+2. Create a new netns using setupNewNetworkNamespace.
+3. Switch to the new namespace using joinContainerNetworkNamespace.
+4. Verify the namespace transition by logging namespace details again.
+
+Full workflow in the main() function:
+
+```go
+func main() {
+    processID := os.Getpid()
+    log.Printf("Process ID: %d\n", processID)
+
+    getNamespaceInfo(processID)
+
+    setupNewNetworkNamespace(processID)
+    if err := joinContainerNetworkNamespace(processID); err != nil {
+        log.Fatalf("Failed to join container network namespace: %v\n", err)
+    }
+
+    getNamespaceInfo(processID)
+}
+```
+
+#### Real-World Applications
+
+1. **Container Networking**
+
+netns enables containers to have their isolated networking, ensuring secure and conflict-free communication.
+
+2. **Custom Environments for Testing**
+
+Developers can create isolated network stacks to test applications in controlled environments.
+
+3. **Shared Networks Between Containers**
+
+Multiple containers or processes can join the same netns, enabling advanced networking setups like service meshes or overlay networks.
+
+
