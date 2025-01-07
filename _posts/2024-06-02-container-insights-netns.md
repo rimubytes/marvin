@@ -34,6 +34,7 @@ By default, all processes share the default network namespace of the host, but t
 Let’s explore how to create, join, and manage network namespaces programmatically in Go.
 
 1. **Setting Up a New Network Namespace**
+
 The setupNewNetworkNamespace function creates a new netns and saves it as a file in /tmp/net-ns. This is achieved through:
 
 Unsharing the current network namespace using syscall.Unshare().
@@ -59,3 +60,29 @@ func setupNewNetworkNamespace(processID int) {
     log.Printf("New network namespace created for process: %d\n", processID)
 }
 ```
+
+2. **Joining a Network Namespace**
+
+The joinContainerNetworkNamespace function allows a process to switch to an existing namespace. This is particularly useful when multiple containers or processes need to share the same network stack.
+
+Key snippet:
+
+```go
+func joinContainerNetworkNamespace(processID int) error {
+    nsMount := fmt.Sprintf("%s/%d", getNetNsPath(), processID)
+    fd, err := unix.Open(nsMount, unix.O_RDONLY, 0)
+    if err != nil {
+        log.Printf("Unable to open network namespace file: %v\n", err)
+        return err
+    }
+    defer unix.Close(fd)
+
+    // Switch to the specified namespace
+    if err := unix.Setns(fd, unix.CLONE_NEWNET); err != nil {
+        log.Printf("Setns system call failed: %v\n", err)
+        return err
+    }
+    return nil
+}
+```
+
