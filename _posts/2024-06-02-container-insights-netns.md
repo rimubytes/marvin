@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 In the dynamic realm of containerized applications, robust network isolation is paramount. Network Namespaces (netns), a cornerstone of container networking, provide this crucial layer of separation. By encapsulating a complete network stack – interfaces, IP addresses, routing tables – within a distinct namespace, netns empowers containers to operate with their own independent network environments.
 <!--more-->
 
-In this installment, we delve into network namespaces (netns). If you’ve ever wondered how containers achieve network isolation or how processes are assigned unique networking environments, this post is for you. By exploring the concepts and walking through practical examples, we’ll uncover how `netns` plays a critical role in containerized systems.
+Curious about how containers achieve network isolation? This post delves into network namespaces (netns), demonstrating how processes are assigned unique networking environments. Through practical examples, you'll gain a deeper understanding of their role in containerized systems.
 
 ## What is a Network Namespace `(netns)`?
 
