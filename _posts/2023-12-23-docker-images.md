@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Minimizing Docker Images: Best Practices for Leaner, Faster Containers"
+title: "How to minimize docker image size"
 comments: true
 tags: docker ContainerOptimization
 excerpt_separator: <!--more-->
