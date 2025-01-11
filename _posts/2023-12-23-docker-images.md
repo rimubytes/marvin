@@ -27,3 +27,17 @@ Lightweight containers require fewer resources to run, improving efficiency in p
 
 ## Best Practices for Minimizing Docker Images
 
+1. **Use Smaller Base Images**
+
+Choosing a lightweight base image is the simplest way to reduce the size of your Docker image. Instead of a general-purpose image like `ubuntu` or `debian`, consider minimalist alternatives like `alpine`, which is just a few megabytes in size.
+
+Example:
+
+```dockerfile
+# Using a smaller base image
+FROM alpine:latest
+RUN apk add --no-cache curl
+```
+
+While `alpine` is an excellent choice for many use cases, be cautious of compatibility issues. Some libraries may not work out-of-the-box and might require additional configurations.
+
