@@ -27,7 +27,7 @@ Lightweight containers require fewer resources to run, improving efficiency in p
 
 ## Best Practices for Minimizing Docker Images
 
-1. **Use Smaller Base Images**
+**Use Smaller Base Images** 
 
 Choosing a lightweight base image is the simplest way to reduce the size of your Docker image. Instead of a general-purpose image like `ubuntu` or `debian`, consider minimalist alternatives like `alpine`, which is just a few megabytes in size.
 
@@ -40,4 +40,42 @@ RUN apk add --no-cache curl
 ```
 
 While `alpine` is an excellent choice for many use cases, be cautious of compatibility issues. Some libraries may not work out-of-the-box and might require additional configurations.
+
+**Multi-Stage Builds** 
+
+Multi-stage builds allow you to separate the build environment from the runtime environment, drastically reducing image size by only including what’s necessary for the application to run.
+
+Example:
+
+```dockerfile
+# Stage 1: Build stage
+FROM golang:1.19 AS builder
+WORKDIR /app
+COPY . .
+RUN go build -o myapp
+
+# Stage 2: Runtime stage
+FROM alpine:latest
+WORKDIR /app
+COPY --from=builder /app/myapp .
+ENTRYPOINT ["./myapp"]
+```
+
+In this example, the final image contains only the compiled binary, excluding unnecessary build tools and dependencies.
+
+**Minimize Layers** 
+
+Each `RUN`, `COPY`, or `ADD` command in a Dockerfile creates a new layer. Minimizing the number of layers helps reduce image size. Combine commands where possible to keep the layer count low.
+
+Example:
+
+```dockerfile
+# Avoid this
+RUN apt-get update
+RUN apt-get install -y curl
+RUN apt-get clean
+
+# Use this instead
+RUN apt-get update && apt-get install -y curl && apt-get clean
+```
 
