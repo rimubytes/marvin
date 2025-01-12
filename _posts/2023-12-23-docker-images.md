@@ -79,3 +79,24 @@ RUN apt-get clean
 RUN apt-get update && apt-get install -y curl && apt-get clean
 ```
 
+**Remove Unnecessary Files** 
+
+Ensure your image doesn’t include temporary files, build artifacts, or package manager caches. Use commands like `rm` to clean up during the build process.
+
+Example:
+
+```dockerfile
+RUN apt-get update && apt-get install -y curl \
+    && rm -rf /var/lib/apt/lists/*
+```
+
+You can also add a `.dockerignore` file to exclude unnecessary files from being copied into the image.
+
+Example `.dockerignore`:
+
+```bash
+node_modules
+.git
+*.log
+```
+
