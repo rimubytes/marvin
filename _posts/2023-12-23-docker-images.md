@@ -132,4 +132,9 @@ docker-slim build --target my-image:latest
 
 Old base images may include outdated libraries with vulnerabilities. Regularly update your base images to include the latest security patches and improvements. Use `docker pull` to fetch the latest version of your base image.
 
+### Common Pitfalls to avoid
+
+**Over-Optimization**: Avoid sacrificing readability and maintainability for minimal size. Strike a balance between optimization and clarity.
+**Using Unsupported Libraries**: When using minimal base images like alpine, ensure that required libraries are available. Test thoroughly to avoid runtime issues.
+**Neglecting Security**: Minimizing size is important, but don’t overlook security best practices. Regularly scan images for vulnerabilities using tools like trivy or snyk.
 
