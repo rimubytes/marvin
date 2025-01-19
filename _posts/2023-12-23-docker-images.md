@@ -138,3 +138,4 @@ Old base images may include outdated libraries with vulnerabilities. Regularly u
 **Using Unsupported Libraries**: When using minimal base images like alpine, ensure that required libraries are available. Test thoroughly to avoid runtime issues.
 **Neglecting Security**: Minimizing size is important, but don’t overlook security best practices. Regularly scan images for vulnerabilities using tools like trivy or snyk.
 
+A leaner image is faster to build, deploy, and run, making it a win-win for developers and operations teams alike. Start optimizing your Dockerfiles today and experience the benefits of lightweight containers in your development and production workflows.
