@@ -100,3 +100,36 @@ node_modules
 *.log
 ```
 
+**Use Minimalist Runtimes** 
+
+For interpreted languages like Python or Node.js, use lightweight runtime images. For example, use `python:3.9-slim` instead of `python:3.9`, or `node:16-alpine` instead of `node:16`.
+
+Example:
+
+```dockerfile
+# Lightweight Python image
+FROM python:3.9-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+ENTRYPOINT ["python", "app.py"]
+```
+
+**Avoid Adding Debugging Tools to Production Images** 
+
+Debugging tools like `curl`, `vim`, or `htop` are helpful during development but shouldn’t be included in production images. Use multi-stage builds to include them only in development stages.
+
+**Automate Image Optimization** 
+
+Use tools like DockerSlim to automatically analyze and optimize your Docker images. DockerSlim minimizes your image by stripping out unnecessary components while maintaining functionality.
+
+```bash
+docker-slim build --target my-image:latest
+```
+
+**Regularly Update Base Images** 
+
+Old base images may include outdated libraries with vulnerabilities. Regularly update your base images to include the latest security patches and improvements. Use `docker pull` to fetch the latest version of your base image.
+
+
